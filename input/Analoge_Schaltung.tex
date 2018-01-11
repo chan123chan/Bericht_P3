@@ -3,7 +3,7 @@
 Im Kapitel werden die verschiedenen analogen Schaltungsteile näher erläutert. Dies entspricht der Messstrecke vom Shunt bis an den Mikrocontroller.
 \subsection{Layer 1}%Marc 1 Seite
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Der erste Layer ist für alle Schaltungsteile mit 230V, sowie für die Verbindung nach Aussen zuständig. Abbildung \ref{fig:first_layer} zeigt den groben Aufbau. Das genaue Schema befindet sich im Anhang unter \textbf{evt. Referenz hinzufügen!!!}
+Der erste Layer ist für alle Schaltungsteile mit 230V, sowie für die Verbindung nach Aussen zuständig. Abbildung \ref{fig:first_layer} zeigt den groben Aufbau. Das genaue Schema befindet sich im Anhang.
 
 \begin{figure}[H]
 \begin{center}
@@ -140,13 +140,13 @@ Die Genauigkeit im analogen Schaltungsteil hängt zum einen von den Toleranzen u
 Nachfolgend werden die möglichen Fehler der einzelnen Blöcke in Abbildung \ref{fig:genauigkeit} erläutert.
 
 \subsubsection*{Messung der physikalischen Grösse}
-Der Strom und die Spannung werden jeweils als Spannung über einen bestimmten Widerstand gemessen.Wie aus dem Schema im Anhang unter \textbf{!Noch einfügen!!!} ersichtlich, lässt sich der Strom über das Ohmschen Gesetz $I = \frac{U_{mess}}{R_{mess}}$ berechenen und die Spannung über einen Spannungsteiler $U = U_{mess} \cdot \frac{R_{tot}}{R_{mess}}$. Somit ergeben die Toleranzen der Widerstände eine konstante faktorielle Ungenauigkeiten, welche durch eine Multiplikation im Mikrocontroller beheben wird.
+Der Strom und die Spannung werden jeweils als Spannung über einen bestimmten Widerstand gemessen. Wie aus dem Schema im Anhang ersichtlich, lässt sich der Strom über das Ohmschen Gesetz $I = \frac{U_{mess}}{R_{mess}}$ berechnen und die Spannung über einen Spannungsteiler $U = U_{mess} \cdot \frac{R_{tot}}{R_{mess}}$. Somit ergeben die Toleranzen der Widerstände eine konstante faktorielle Ungenauigkeiten, welche durch eine Multiplikation im Mikrocontroller beheben wird.
 
 \subsubsection*{Verstärkung und Filterung}
 \textbf{!!!!Noch schreiben!!!}
 
 \subsubsection*{ADC}
-Bei der Konvertierung eines analogen Signals zu einem Digitalem gibt es zwangsläufig einen Informationsverlust durch die Quantisierung des Signals. Da für dieses Gerät ein 10Bit-ADC verwendet wird, hat das digitale Signal eine Auflösung von 1024 Werten. Für eine Spannung von $\pm$333V bedeutet dies eine Auflösung von 0.65V. Für den Strom ergeben sich folgende Ungenauigkeiten: Der $\pm 15$A Messbereich, ergibt eine Genauigkeit von 19.5mA, der $\pm$5A Bereich, eine von 9.77mA und der Bereich von $\pm$1A, eine Genauigkeit von 1.95mA.
+Bei der Konvertierung eines analogen Signals zu einem Digitalem gibt es zwangsläufig einen Informationsverlust durch die Quantisierung des Signals. Da für dieses Gerät ein 10Bit-ADC verwendet wird, hat das digitale Signal eine Auflösung von 1024 Werten. Für eine Spannung von $\pm$333V bedeutet dies eine Auflösung von 0.65V. Für den Strom ergeben sich folgende Ungenauigkeiten: Der $\pm 15$A Messbereich, ergibt eine Genauigkeit von 19.5mA, der $\pm$5A Bereich, eine von 9.77mA und der Bereich von $\pm$0.5A, eine Genauigkeit von 0.97mA.
 
 \subsubsection*{Resultierende Genauigkeit} 
 \textbf{!!Noch schreiben!!!!}
