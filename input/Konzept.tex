@@ -17,7 +17,7 @@ Die Auftraggeber verlangen ein Gerät das folgenden Anforderungen gerecht werden
 Aus diesen Anforderungen wurden die folgenden Konzepte abgeleitet.
 
 \subsection{Mechanischer Aufbau}
-Der mechanische Aufbau ist durch das Printdesign geprägt. P3T7 besteht aus einem ATmega2560-Board, welches mit 2 «Shields» bestückt wurde. Auf dem obersten Layer befinden sich unter anderem die benötigten Messshunts, der Spannungsteiler, das Netzteil für die $\pm 5V$ Versorgung sowie Sicherungen, welche bei zu hohen Strömen auslösen. Auf dem 2. Layer werden die Messsignale aufbereitet und anschliessend an den Mikrocontroller weitergeben. Das Mikrocontrollerboard ist mit den Massen 54 x 100 der kleinste Layer und wird vom zweiten Print (90 x 125) komplett «verdeckt». Der oberste Print ist um 20 mm seitwärts zum zweiten Layer versetzt und zudem 5 mm schmäler. Durch dies kann durch Distanzbolzen im Gehäuse der Print befestigt werden. Das Gehäuse besitzt eine Kabelverschraubung, durch welche ein SEV 1011 Stecker Typ 12 befestigt ist. Auf der entgegengesetzten Seite können Verbraucher über eine SEV 1011 Steckdose angeschlossen werden.
+Der mechanische Aufbau ist durch das Printdesign geprägt. P3T7 besteht aus einem \\ ATmega2560-Board, welches mit 2 «Shields» bestückt wurde. Auf dem obersten Layer befinden sich unter anderem die benötigten Messshunts, der Spannungsteiler, das Netzteil für die $\pm 5V$ Versorgung sowie Sicherungen, welche bei zu hohen Strömen auslösen. Auf dem 2. Layer werden die Messsignale aufbereitet und anschliessend an den Mikrocontroller weitergeben. Das Mikrocontrollerboard ist mit den Massen 54 x 100 der kleinste Layer und wird vom zweiten Print (90 x 125) komplett «verdeckt». Der oberste Print ist um 20 mm seitwärts zum zweiten Layer versetzt und zudem 5 mm schmäler. Durch dies kann durch Distanzbolzen im Gehäuse der Print befestigt werden. Das Gehäuse besitzt eine Kabelverschraubung, durch welche ein SEV 1011 Stecker Typ 12 befestigt ist. Auf der entgegengesetzten Seite können Verbraucher über eine SEV 1011 Steckdose angeschlossen werden.
 Das Gehäuse wird durch 4 Schrauben geschlossen. Durch das Kunststoffgehäuse werden jegliche Berührungen mit elektrisch leitenden Teilen verhindert. Falls die Sicherung ansprechen sollte, muss das Gerät vom Netz getrennt werden, bevor die Sicherung ausgewechselt werden kann. 
 
 
@@ -45,7 +45,13 @@ Das Messgerät kann drei Betriebszustände unterschieden: dem Echtzeitmodus, dem
 
 Die Steuerung der Messungen erfolgt durch einen softwaregenerierten Timer, welcher im Hauptprogramm einen Interrupt auslöst. Erfolgt dieser, so wird die Momentanleistung gemessen und das Ergebnis in einem Buffer gespeichert. Bei jedem weiterem Interrupt wird die Leistung erneut gemessen und im Buffer aufsummiert. Die Anzahl an Interrupts wird von der Software gezählt. Nach 10 Sekunden wird die mittlere Leistung berechnet und im Flashspeicher des Messgerätes abgelegt. Abbildung XXX zeigt eine schematische Abbildung des Grobkonzeptes der Firmware.
 
-[ Abbildung folgt noch ] 
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.7\textwidth ]{images/Konzept_Firmware.png}
+\caption{Firmware Aufbau}
+\label{fig:Firmware_Aufbau}
+\end{center}
+\end{figure}
 
 \subsection{Software Aufbau}
 Die Software stellt die Schnittstelle zwischen dem Menschen und dem P3T7 dar. Sie hat die Aufgabe die Daten aus dem P3T7 zu lesen und sie für weitere Berechnungen bereitzustellen. Damit die Daten einfach weiterverarbeitbar sind, generiert die Software ein CSV-File. Dieses kann leicht in Excel oder Matlab importiert werden. Des Weitern werden Berechnungen mit der Software gemacht, für welche der Controller zu schwach ist und um Speicherplatz auf dem P3T7 zu sparen.

@@ -130,8 +130,6 @@ Die zweite Optimierung befasst sich mit dem sparsamen Speichern und Übertragen 
 
 Ein Datenpaket besteht somit aus 6 Byte bzw. 48 Bit. Die Zeitinformationen sind so codiert, dass nur genau so viele Bits zur Verfügung stehen, wie benötigt werden. Im Overhead können zusätzliche Statusinformationen dem Programm übergeben werden bzw. wird dieser benötigt, um ungültige Messdaten zu detektieren (Erklärung später). Ausserdem wird damit der Datenstrom auf ein ganzzahliges Vielfaches von Acht aufgefüllt. Bei den Messdaten spart man sich das letzte Byte der eigentlich 4Byte grossen Fliesskommazahl, da es sich bei diesen Bits um die Grössenordnung 4. - 8. Nachkommastelle handelt. Diese Genauigkeit kann gar nicht erreicht werden, weshalb diese Information auch nicht gespeichert wird.
 
-[Hier folgt noch die Bedeutung des Overheads]
-
 \subsection{Peripherie und Algorithmen}
 
 Die Funktionen für die Kommunikation mit der Peripherie sowie einige kleine Algorithmen sind zwecks Programmübersicht in externe C-Module gepackt. Auf die Verwendung von externen Bibliotheken ist komplett verzichtet worden. Einerseits um die Nachvollziehbarkeit zu gewährleisten, andererseits, um den Code möglichst optimiert zu gestalten, da dies einer der Hauptprioritäten bei der Erstellung der Firmware war. Es war also nicht Ziel, eine möglichst universell einsetzbare Bibliothek zu schreiben, sondern einen schlanken und effizienten Treiber zu erstellen, der nur gerade die Funktionen beinhaltet, welche das Messgerät benötigt.
@@ -196,7 +194,7 @@ Der Gewinn dieser Organisation liegt in der Beschleunigung des Initialisierungsv
 
 Die 4Bit des Overheads wurden so definiert, dass eine Einserfolge einen ungültigen Datensatz signalisiert. Ein leerer Speicherplatz im Flashspeicher ist logisch mit Einsen gefüllt. Das Lesen eines leeren Speicherplatzes gibt den Wert \glqq 1111 1111\grqq{}   zurück. Stösst der Algorithmus beim Aufstarten auf eine Einserfolge im Overhead, ist der leere Speicherplatz gefunden. 
 
-Die Handhabung der Statusinformation eines Sektors ist etwas komplexer und wird im Folgenden genauer erläutert. Der Status wird immer in das gleiche Byte geschrieben. Ein Überschreiben im eigentlichen Sinne ist grundsätzlich nicht möglich. Wie oben erwähnt ist ein leerer Speicherplatz mit logischen Einsen gefüllt. Solange die einzelnen Bits von logisch 1 auf logisch 0 wechseln, ist ein Überschreiben möglich. Sind die Statusinformationen so gewählt, dass sie in der chronologischen Reihenfolge ihres Auftretens nur weitere Nullen hinzufügen, können mehrere Statusinformationen im gleichen Byte gespeichert werden. Um den Speicher konsistent zu halten, werden nur vier unterschiedliche Zustände benötigt.
+Die Handhabung der Statusinformation eines Sektors ist etwas komplexer und wird im Folgenden genauer erläutert. Der Status wird immer in das gleiche Byte geschrieben. Ein Überschreiben im eigentlichen Sinne ist grundsätzlich nicht möglich. Wie oben erwähnt ist ein leerer Speicherplatz mit logischen Einsen gefüllt. Solange die einzelnen Bits von logisch 1 auf logisch 0 wechseln, ist ein Überschreiben möglich. Sind die Statusinformationen so gewählt, dass sie in der chronologischen Reihenfolge ihres Auftretens nur weitere Nullen hinzufügen, so können mehrere Statusinformationen im gleichen Byte gespeichert werden. Um den Speicher konsistent zu halten, werden nur vier unterschiedliche Zustände benötigt.
 
 \begin{table}[H]
 \begin{center}
