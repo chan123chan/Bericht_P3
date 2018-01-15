@@ -1,20 +1,20 @@
 \select@language {ngerman}
-\contentsline {figure}{\numberline {1}{\ignorespaces Mechanischer Aufbau\relax }}{5}{figure.caption.3}
-\contentsline {figure}{\numberline {2}{\ignorespaces Konzept Elektrischer Aufbau\relax }}{6}{figure.caption.4}
-\contentsline {figure}{\numberline {3}{\ignorespaces Firmware Aufbau\relax }}{6}{figure.caption.5}
-\contentsline {figure}{\numberline {4}{\ignorespaces Konzept Software\relax }}{7}{figure.caption.6}
-\contentsline {figure}{\numberline {5}{\ignorespaces Algorithmus um mittlere Leistung zu berechnen\relax }}{8}{figure.caption.7}
-\contentsline {figure}{\numberline {6}{\ignorespaces Signalaufbereitungsstrecke\relax }}{9}{figure.caption.8}
-\contentsline {figure}{\numberline {7}{\ignorespaces Blockschaltbild des ersten Layers des Leistungsmessger\IeC {\"a}tes\relax }}{10}{figure.caption.13}
-\contentsline {figure}{\numberline {8}{\ignorespaces Frequenzgang Tiefpass-Filter 1. Ordnung\relax }}{11}{figure.caption.18}
-\contentsline {figure}{\numberline {9}{\ignorespaces Sallen/Key-Topologie Tiefpass-Filter 2. Ordnung\relax }}{12}{figure.caption.20}
-\contentsline {figure}{\numberline {10}{\ignorespaces Umgebautes Sallen/Key zu passivem Filter 1. Ordnung\relax }}{12}{figure.caption.23}
-\contentsline {figure}{\numberline {11}{\ignorespaces Einkoppelung\relax }}{13}{figure.caption.24}
-\contentsline {figure}{\numberline {12}{\ignorespaces Sicherheitsschaltung\relax }}{14}{figure.caption.25}
-\contentsline {figure}{\numberline {13}{\ignorespaces Messpfad\relax }}{15}{figure.caption.26}
-\contentsline {figure}{\numberline {14}{\ignorespaces \IeC {\"U}bertragungskonzept\relax }}{20}{figure.caption.35}
-\contentsline {figure}{\numberline {15}{\ignorespaces Messbereiche\relax }}{22}{figure.caption.39}
-\contentsline {figure}{\numberline {16}{\ignorespaces Aufteilung des Speichers\relax }}{23}{figure.caption.41}
-\contentsline {figure}{\numberline {17}{\ignorespaces Aufteilung eines Sektors\relax }}{23}{figure.caption.42}
-\contentsline {figure}{\numberline {18}{\ignorespaces GUI der Bediensoftware\relax }}{26}{figure.caption.46}
-\contentsline {figure}{\numberline {19}{\ignorespaces Diagramm der Bediensoftware\relax }}{27}{figure.caption.50}
+\contentsline {figure}{\numberline {1}{\ignorespaces Mechanischer Aufbau\relax }}{6}{figure.caption.3}
+\contentsline {figure}{\numberline {2}{\ignorespaces Konzept Elektrischer Aufbau\relax }}{7}{figure.caption.4}
+\contentsline {figure}{\numberline {3}{\ignorespaces Firmware Aufbau\relax }}{7}{figure.caption.5}
+\contentsline {figure}{\numberline {4}{\ignorespaces Konzept Software\relax }}{8}{figure.caption.6}
+\contentsline {figure}{\numberline {5}{\ignorespaces Algorithmus um mittlere Leistung zu berechnen\relax }}{9}{figure.caption.7}
+\contentsline {figure}{\numberline {6}{\ignorespaces Signalaufbereitungsstrecke\relax }}{10}{figure.caption.8}
+\contentsline {figure}{\numberline {7}{\ignorespaces Blockschaltbild des ersten Layers des Leistungsmessger\IeC {\"a}tes\relax }}{11}{figure.caption.13}
+\contentsline {figure}{\numberline {8}{\ignorespaces Frequenzgang Tiefpass-Filter 1. Ordnung\relax }}{12}{figure.caption.18}
+\contentsline {figure}{\numberline {9}{\ignorespaces Sallen/Key-Topologie Tiefpass-Filter 2. Ordnung\relax }}{13}{figure.caption.20}
+\contentsline {figure}{\numberline {10}{\ignorespaces Umgebautes Sallen/Key zu passivem Filter 1. Ordnung\relax }}{13}{figure.caption.23}
+\contentsline {figure}{\numberline {11}{\ignorespaces Einkoppelung\relax }}{14}{figure.caption.24}
+\contentsline {figure}{\numberline {12}{\ignorespaces Sicherheitsschaltung\relax }}{15}{figure.caption.25}
+\contentsline {figure}{\numberline {13}{\ignorespaces Messpfad\relax }}{16}{figure.caption.26}
+\contentsline {figure}{\numberline {14}{\ignorespaces \IeC {\"U}bertragungskonzept\relax }}{21}{figure.caption.35}
+\contentsline {figure}{\numberline {15}{\ignorespaces Messbereiche\relax }}{23}{figure.caption.39}
+\contentsline {figure}{\numberline {16}{\ignorespaces Aufteilung des Speichers\relax }}{24}{figure.caption.41}
+\contentsline {figure}{\numberline {17}{\ignorespaces Aufteilung eines Sektors\relax }}{24}{figure.caption.42}
+\contentsline {figure}{\numberline {18}{\ignorespaces GUI der Bediensoftware\relax }}{27}{figure.caption.46}
+\contentsline {figure}{\numberline {19}{\ignorespaces Diagramm der Bediensoftware\relax }}{28}{figure.caption.50}
