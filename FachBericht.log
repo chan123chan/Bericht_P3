@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.3)  7 JAN 2018 20:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.3)  17 JAN 2018 17:58
 entering extended mode
 **./FachBericht.tex
 (FachBericht.tex
@@ -987,21 +987,21 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 ) (FachBericht.aux)
 \openout1 = `FachBericht.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 20.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 22.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1067,7 +1067,7 @@ G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
 \AtBeginShipoutBox=\box42
-Package hyperref Info: Link coloring ON on input line 20.
+Package hyperref Info: Link coloring ON on input line 22.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1077,9 +1077,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count144
 )
-LaTeX Info: Redefining \ref on input line 20.
-LaTeX Info: Redefining \pageref on input line 20.
-LaTeX Info: Redefining \nameref on input line 20.
+LaTeX Info: Redefining \ref on input line 22.
+LaTeX Info: Redefining \pageref on input line 22.
+LaTeX Info: Redefining \nameref on input line 22.
 
 (FachBericht.out) (FachBericht.out)
 \@outlinefile=\write4
@@ -1089,300 +1089,281 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
  ABD: EveryShipout initializing macros
-<fhnwreport/fhnwlogo.pdf, id=114, 183.81773pt x 28.4543pt>
+<fhnwreport/fhnwlogo.pdf, id=106, 183.81773pt x 28.4543pt>
 File: fhnwreport/fhnwlogo.pdf Graphic file (type pdf)
 
 <use fhnwreport/fhnwlogo.pdf>
-Package pdftex.def Info: fhnwreport/fhnwlogo.pdf used on input line 23.
+Package pdftex.def Info: fhnwreport/fhnwlogo.pdf used on input line 25.
 (pdftex.def)             Requested size: 220.57736pt x 34.1433pt.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 23.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 25.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 23.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 25.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 23.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 25.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 23.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 25.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omxlmex.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 23.
+(Font)              <12> on input line 25.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 23.
+(Font)              <8> on input line 25.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 23.
+(Font)              <6> on input line 25.
 
-Overfull \hbox (10.87958pt too wide) in paragraph at lines 23--23
- [][] 
- []
+<images/title_image.jpeg, id=107, 1606.0pt x 1204.5pt>
+File: images/title_image.jpeg Graphic file (type jpg)
 
-[1
+<use images/title_image.jpeg>
+Package pdftex.def Info: images/title_image.jpeg used on input line 28.
+(pdftex.def)             Requested size: 364.19664pt x 273.15117pt.
+ (input/Abstract.tex [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <./fhnwreport/fhnwlogo.pdf
->]
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 41.
+> <./images/title_image.jpeg>]) [2]
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 48.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmss.fd"
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) (FachBericht.toc
+)
+(FachBericht.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 4.
 )
 \tf@toc=\write5
 \openout5 = `FachBericht.toc'.
 
+ [3
 
-[2
-
-] (input/Einleitung.tex) [3
+] (input/Einleitung.tex) [4
 
 ] (input/Konzept.tex
-Overfull \hbox (4.38748pt too wide) in paragraph at lines 4--6
-\T1/lmr/m/n/10.95 Der me-cha-ni-sche Auf-bau ist durch das Print-de-sign ge-prä
-gt. P3T7 be-steht aus ei-nem ATmega2560-
- []
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 4.
 
-<images/Konzept_Elektrischer_Aufbau.png, id=176, 925.4575pt x 331.2375pt>
+("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omslmr.fd"
+File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 4.
+
+<images/Konzept_MechAuf.jpeg, id=172, 680.5425pt x 557.08125pt>
+File: images/Konzept_MechAuf.jpeg Graphic file (type jpg)
+
+<use images/Konzept_MechAuf.jpeg>
+Package pdftex.def Info: images/Konzept_MechAuf.jpeg used on input line 26.
+(pdftex.def)             Requested size: 318.66946pt x 260.85918pt.
+ [5]
+<images/Konzept_Elektrischer_Aufbau.png, id=181, 925.4575pt x 331.2375pt>
 File: images/Konzept_Elektrischer_Aufbau.png Graphic file (type png)
 
 <use images/Konzept_Elektrischer_Aufbau.png>
 Package pdftex.def Info: images/Konzept_Elektrischer_Aufbau.png used on input l
-ine 15.
+ine 37.
 (pdftex.def)             Requested size: 409.71689pt x 146.6446pt.
- [4 <./images/Konzept_Elektrischer_Aufbau.png>] <images/Konzept_Software.png, i
-d=187, 965.6075pt x 363.3575pt>
+ [6 <./images/Konzept_MechAuf.jpeg> <./images/Konzept_Elektrischer_Aufbau.png>]
+
+<images/Konzept_Firmware.png, id=190, 727.71875pt x 407.5225pt>
+File: images/Konzept_Firmware.png Graphic file (type png)
+
+<use images/Konzept_Firmware.png>
+Package pdftex.def Info: images/Konzept_Firmware.png used on input line 50.
+(pdftex.def)             Requested size: 318.66946pt x 178.45854pt.
+
+<images/Konzept_Software.png, id=191, 965.6075pt x 363.3575pt>
 File: images/Konzept_Software.png Graphic file (type png)
 
 <use images/Konzept_Software.png>
-Package pdftex.def Info: images/Konzept_Software.png used on input line 31.
+Package pdftex.def Info: images/Konzept_Software.png used on input line 61.
 (pdftex.def)             Requested size: 409.71689pt x 154.1726pt.
-) (input/Technische_Grundlagen.tex
-<images/messung_schematisch.png, id=188, 551.05875pt x 207.77625pt>
+ [7 <./images/Konzept_Firmware.png>])
+(input/Technische_Grundlagen.tex [8 <./images/Konzept_Software.png>]
+<images/messung_schematisch.png, id=205, 551.05875pt x 207.77625pt>
 File: images/messung_schematisch.png Graphic file (type png)
 
 <use images/messung_schematisch.png>
-Package pdftex.def Info: images/messung_schematisch.png used on input line 15.
+Package pdftex.def Info: images/messung_schematisch.png used on input line 17.
 (pdftex.def)             Requested size: 284.52756pt x 107.28336pt.
- [5 <./images/Konzept_Software.png>]
-[6 <./images/messung_schematisch.png>]
-<images/Technische_Grundlagen_Signalaufbereitung.png, id=213, 864.22874pt x 82.
+ [9 <./images/messung_schematisch.png>]
+<images/Technische_Grundlagen_Signalaufbereitung.png, id=223, 864.22874pt x 82.
 3075pt>
 File: images/Technische_Grundlagen_Signalaufbereitung.png Graphic file (type pn
 g)
  <use images/Technische_Grundlagen_Signalaufbereitung.png>
 Package pdftex.def Info: images/Technische_Grundlagen_Signalaufbereitung.png us
-ed on input line 61.
+ed on input line 64.
 (pdftex.def)             Requested size: 409.71689pt x 39.01984pt.
-) [7 <./images/Technische_Grundlagen_Signalaufbereitung.png>] (input/Analoge_Sc
-haltung.tex
-<images/first_layer.png, id=226, 709.65125pt x 288.07625pt>
+) [10 <./images/Technische_Grundlagen_Signalaufbereitung.png>] (input/Analoge_S
+chaltung.tex
+<images/first_layer.png, id=236, 709.65125pt x 288.07625pt>
 File: images/first_layer.png Graphic file (type png)
 
 <use images/first_layer.png>
-Package pdftex.def Info: images/first_layer.png used on input line 10.
+Package pdftex.def Info: images/first_layer.png used on input line 11.
 (pdftex.def)             Requested size: 455.24408pt x 184.80772pt.
- [8 <./images/first_layer.png>]
-<images/Analoge_Schaltung_Frequenzgang.png, id=236, 1099.53642pt x 510.62196pt>
+ [11 <./images/first_layer.png>]
+<images/Analoge_Schaltung_Frequenzgang.png, id=246, 1099.53642pt x 510.62196pt>
 File: images/Analoge_Schaltung_Frequenzgang.png Graphic file (type png)
 <use images/Analoge_Schaltung_Frequenzgang.png>
 Package pdftex.def Info: images/Analoge_Schaltung_Frequenzgang.png used on inpu
-t line 37.
-(pdftex.def)             Requested size: 204.85844pt x 95.13364pt.
+t line 36.
+(pdftex.def)             Requested size: 409.71689pt x 190.26729pt.
 
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 34--45
-[]$[]$ $[]$ 
- []
-
-
-Underfull \hbox (badness 4859) in paragraph at lines 50--51
-[]\T1/lmr/m/n/10.95 Die Wahl fiel auf Butterworth-Filter mit
- []
-
-<images/Analoge_Schaltung_Sallen.png, id=237, 1099.53642pt x 510.62196pt>
+<images/Analoge_Schaltung_Sallen.png, id=249, 1099.53642pt x 510.62196pt>
 File: images/Analoge_Schaltung_Sallen.png Graphic file (type png)
 
 <use images/Analoge_Schaltung_Sallen.png>
 Package pdftex.def Info: images/Analoge_Schaltung_Sallen.png used on input line
- 55.
-(pdftex.def)             Requested size: 204.85844pt x 95.13364pt.
-
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 49--60
-$[]$ $[]$ 
- []
-
-
-<images/Analoge_Schaltung_Sallentopassive.png, id=238, 1099.53642pt x 510.62196
+ 53.
+(pdftex.def)             Requested size: 409.71689pt x 190.26729pt.
+ [12 <./images/Analoge_Schaltung_Frequenzgang.png>]
+<images/Analoge_Schaltung_Sallentopassive.png, id=261, 1099.53642pt x 510.62196
 pt>
 File: images/Analoge_Schaltung_Sallentopassive.png Graphic file (type png)
  <use images/Analoge_Schaltung_Sallentopassive.png>
 Package pdftex.def Info: images/Analoge_Schaltung_Sallentopassive.png used on i
-nput line 71.
-(pdftex.def)             Requested size: 204.85844pt x 95.13364pt.
-
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 65--76
-[]$[]$ $[]$ 
- []
-
-[9 <./images/Analoge_Schaltung_Frequenzgang.png> <./images/Analoge_Schaltung_Sa
-llen.png>]
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 79--92
-[]$[]$ $[]$ 
- []
-
-
-<images/Analoge_Schaltung_Einkoppelung.png, id=248, 574.28839pt x 500.72786pt>
+nput line 67.
+(pdftex.def)             Requested size: 409.71689pt x 190.26729pt.
+ [13 <./images/Analoge_Schaltung_Sallen.png> <./images/Analoge_Schaltung_Sallen
+topassive.png>]
+<images/Analoge_Schaltung_Einkoppelung.png, id=274, 574.28839pt x 500.72786pt>
 File: images/Analoge_Schaltung_Einkoppelung.png Graphic file (type png)
 
 <use images/Analoge_Schaltung_Einkoppelung.png>
 Package pdftex.def Info: images/Analoge_Schaltung_Einkoppelung.png used on inpu
-t line 100.
-(pdftex.def)             Requested size: 204.85844pt x 178.61919pt.
-
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 97--110
-[]$[]$ $[]$
- []
-
-<images/Analoge_Schaltung_Sicherung.png, id=250, 508.0409pt x 461.5816pt>
+t line 91.
+(pdftex.def)             Requested size: 409.71689pt x 357.23837pt.
+ [14 <./images/Analoge_Schaltung_Einkoppelung.png>]
+<images/Analoge_Schaltung_Sicherung.png, id=284, 508.0409pt x 461.5816pt>
 File: images/Analoge_Schaltung_Sicherung.png Graphic file (type png)
 
 <use images/Analoge_Schaltung_Sicherung.png>
 Package pdftex.def Info: images/Analoge_Schaltung_Sicherung.png used on input l
-ine 119.
-(pdftex.def)             Requested size: 204.85844pt x 186.12251pt.
+ine 113.
+(pdftex.def)             Requested size: 409.71689pt x 372.25208pt.
+ [15 <./images/Analoge_Schaltung_Sicherung.png>]
+<images/Analoge_Schaltung_genauigkeit.png, id=292, 522.95375pt x 61.22874pt>
+File: images/Analoge_Schaltung_genauigkeit.png Graphic file (type png)
 
-Overfull \hbox (2.43333pt too wide) in paragraph at lines 113--124
-$[]$ $[]$ 
- []
-
-[10 <./images/Analoge_Schaltung_Sallentopassive.png> <./images/Analoge_Schaltun
-g_Einkoppelung.png>]
-<images/genauigkeit.png, id=259, 522.95375pt x 61.22874pt>
-File: images/genauigkeit.png Graphic file (type png)
-
-<use images/genauigkeit.png>
-Package pdftex.def Info: images/genauigkeit.png used on input line 132.
+<use images/Analoge_Schaltung_genauigkeit.png>
+Package pdftex.def Info: images/Analoge_Schaltung_genauigkeit.png used on input
+ line 124.
 (pdftex.def)             Requested size: 455.24408pt x 53.30219pt.
- [11 <./images/Analoge_Schaltung_Sicherung.png> <./images/genauigkeit.png>]) [1
-2] (input/Software.tex
-Overfull \hbox (12.4416pt too wide) in paragraph at lines 2--3
-\T1/lmr/m/n/10.95 Die Firm-wa-re des Mess-ge-rä-tes ist ei-ne in C ge-schrie-be
--ne Soft-wa-re für die AVR-Prozessorarchitektur.
- []
-
-<images/Software_Tabelle_1.png, id=277, 1369.36594pt x 403.5075pt>
-File: images/Software_Tabelle_1.png Graphic file (type png)
-
-<use images/Software_Tabelle_1.png>
-Package pdftex.def Info: images/Software_Tabelle_1.png used on input line 19.
-(pdftex.def)             Requested size: 409.71689pt x 120.72685pt.
- [13] [14 <./images/Software_Tabelle_1.png>] [15] <images/Software_uebertragung
-.png, id=313, 729.47531pt x 124.21407pt>
+ [16 <./images/Analoge_Schaltung_genauigkeit.png>]) [17] (input/Software.tex [1
+8] [19] [20]
+<images/Software_uebertragung.png, id=351, 729.47531pt x 124.21407pt>
 File: images/Software_uebertragung.png Graphic file (type png)
 
 <use images/Software_uebertragung.png>
 Package pdftex.def Info: images/Software_uebertragung.png used on input line 12
-3.
+5.
 (pdftex.def)             Requested size: 409.71689pt x 69.76598pt.
- [16 <./images/Software_uebertragung.png>] [17]
-
-LaTeX Warning: Command \^ invalid in math mode on input line 153.
-
-
-LaTeX Warning: Command \^ invalid in math mode on input line 153.
-
-<images/Software_messbereich.png, id=327, 630.10406pt x 459.96844pt>
+ [21 <./images/Software_uebertragung.png>] <images/Software_messbereich.png, id
+=360, 630.10406pt x 459.96844pt>
 File: images/Software_messbereich.png Graphic file (type png)
 
 <use images/Software_messbereich.png>
-Package pdftex.def Info: images/Software_messbereich.png used on input line 157
+Package pdftex.def Info: images/Software_messbereich.png used on input line 158
 .
 (pdftex.def)             Requested size: 409.71689pt x 299.08824pt.
- [18 <./images/Software_messbereich.png>]
-<images/Software_Tabelle_2.png, id=336, 764.8575pt x 64.74188pt>
+ [22]
+<images/Software_stromkennlinie.png, id=371, 656.4525pt x 417.05812pt>
+File: images/Software_stromkennlinie.png Graphic file (type png)
+
+<use images/Software_stromkennlinie.png>
+Package pdftex.def Info: images/Software_stromkennlinie.png used on input line 
+171.
+(pdftex.def)             Requested size: 409.71689pt x 260.3043pt.
+ [23 <./images/Software_messbereich.png>] <images/Software_Tabelle_2.png, id=37
+9, 764.8575pt x 64.74188pt>
 File: images/Software_Tabelle_2.png Graphic file (type png)
 
 <use images/Software_Tabelle_2.png>
-Package pdftex.def Info: images/Software_Tabelle_2.png used on input line 177.
+Package pdftex.def Info: images/Software_Tabelle_2.png used on input line 201.
 (pdftex.def)             Requested size: 409.71689pt x 34.68051pt.
-
-<images/Software_Tabelle_3.png, id=338, 881.54344pt x 70.01157pt>
+ [24 <./images/Software_stromkennlinie.png>] <images/Software_Tabelle_3.png, id
+=388, 881.54344pt x 70.01157pt>
 File: images/Software_Tabelle_3.png Graphic file (type png)
 
 <use images/Software_Tabelle_3.png>
-Package pdftex.def Info: images/Software_Tabelle_3.png used on input line 187.
+Package pdftex.def Info: images/Software_Tabelle_3.png used on input line 211.
 (pdftex.def)             Requested size: 409.71689pt x 32.539pt.
- [19 <./images/Software_Tabelle_2.png> <./images/Software_Tabelle_3.png>]
-<images/Software_Tabelle_4.png, id=347, 822.07124pt x 157.01518pt>
-File: images/Software_Tabelle_4.png Graphic file (type png)
-
-<use images/Software_Tabelle_4.png>
-Package pdftex.def Info: images/Software_Tabelle_4.png used on input line 201.
-(pdftex.def)             Requested size: 409.71689pt x 78.25581pt.
- [20 <./images/Software_Tabelle_4.png>]
-File: images/Software_Tabelle_4.png Graphic file (type png)
-
-<use images/Software_Tabelle_4.png>
-Package pdftex.def Info: images/Software_Tabelle_4.png used on input line 238.
-(pdftex.def)             Requested size: 409.71689pt x 78.25581pt.
- [21]
-<images/Software_GUI.png, id=362, 590.205pt x 340.70143pt>
+ [25 <./images/Software_Tabelle_2.png> <./images/Software_Tabelle_3.png>] [26] 
+[27]
+<images/Software_GUI.png, id=409, 591.49553pt x 343.2825pt>
 File: images/Software_GUI.png Graphic file (type png)
 
 <use images/Software_GUI.png>
-Package pdftex.def Info: images/Software_GUI.png used on input line 260.
-(pdftex.def)             Requested size: 409.71689pt x 236.51907pt.
- [22 <./images/Software_GUI.png>]
-<images/Software_UML.png, id=371, 754.82pt x 453.695pt>
+Package pdftex.def Info: images/Software_GUI.png used on input line 300.
+(pdftex.def)             Requested size: 409.71689pt x 237.7923pt.
+ [28 <./images/Software_GUI.png>]
+<images/Software_UML.png, id=418, 754.82pt x 453.695pt>
 File: images/Software_UML.png Graphic file (type png)
 
 <use images/Software_UML.png>
-Package pdftex.def Info: images/Software_UML.png used on input line 280.
+Package pdftex.def Info: images/Software_UML.png used on input line 320.
 (pdftex.def)             Requested size: 409.71689pt x 246.26544pt.
-) (input/QualitÃ¤tssicherung.tex)
-(input/Schlusswort.tex) (input/Anhang.tex
+) (input/QualitÃ¤tssicherung.tex [29 <./images/Software_UML.png>]
+<images/qualitatssicherung_5A_500mVpp_50Hz.png, id=428, 526.46687pt x 418.06187
+pt>
+File: images/qualitatssicherung_5A_500mVpp_50Hz.png Graphic file (type png)
+ <use images/qualitatssicherung_5A_500mVpp_50Hz.png>
+Package pdftex.def Info: images/qualitatssicherung_5A_500mVpp_50Hz.png used on 
+input line 15.
+(pdftex.def)             Requested size: 398.33858pt x 316.33328pt.
 
-LaTeX Warning: Citation `Mason1953' on page 23 undefined on input line 2.
+<images/qualitatssicherung_U_5Vpp_50Hz.png, id=430, 541.52313pt x 407.02063pt>
+File: images/qualitatssicherung_U_5Vpp_50Hz.png Graphic file (type png)
+
+<use images/qualitatssicherung_U_5Vpp_50Hz.png>
+Package pdftex.def Info: images/qualitatssicherung_U_5Vpp_50Hz.png used on inpu
+t line 24.
+(pdftex.def)             Requested size: 398.33858pt x 299.40808pt.
+ [30 <./images/qualitatssicherung_5A_500mVpp_50Hz.png>]) (input/Schlusswort.tex
+ [31 <./images/qualitatssicherung_U_5Vpp_50Hz.png>]) (input/Echtheitserklaerung
+.tex [32])
+(input/Verzeichnisse.tex [33] (FachBericht.lof)
+\tf@lof=\write6
+\openout6 = `FachBericht.lof'.
+
+ (FachBericht.lot)
+\tf@lot=\write7
+\openout7 = `FachBericht.lot'.
 
 
-LaTeX Warning: Citation `Mason1956' on page 23 undefined on input line 2.
-
-(FachBericht.bbl)) [23 <./images/Software_UML.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 58.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 58.
+(FachBericht.bbl [34])) (input/Anhang.tex [35]) [36]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 67.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 67.
  (FachBericht.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 58.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 58.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 67.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 67.
 Package rerunfilecheck Info: File `FachBericht.out' has not changed.
-(rerunfilecheck)             Checksum: 3AD6C42AF09A7FC373135885E7128BE5;1737.
-
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 58.
+(rerunfilecheck)             Checksum: 3EE618AED9EF0B0A966CB8FF36B6A4F9;1572.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 67.
  ) 
 Here is how much of TeX's memory you used:
- 19026 strings out of 493323
- 353621 string characters out of 3139025
- 422324 words of memory out of 3000000
- 22046 multiletter control sequences out of 15000+200000
- 59807 words of font info for 43 fonts, out of 3000000 for 9000
+ 19133 strings out of 493323
+ 355691 string characters out of 3139025
+ 423063 words of memory out of 3000000
+ 22094 multiletter control sequences out of 15000+200000
+ 64070 words of font info for 44 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,10n,54p,1009b,435s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Fil
-es/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Program Files/MiKTeX 2.9/fon
-ts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/l
-m-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<C:/Program 
+ 55i,14n,54p,1636b,475s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
+iKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
+nc/dvips/lm/lm-mathex.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ma
+thit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}<C:/Program 
 Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/lm/lmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
 ic/lm/lmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb>
@@ -1391,12 +1372,13 @@ MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr
 12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Program 
 Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/lm/lmro10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-lm/lmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb>
-Output written on FachBericht.pdf (23 pages, 951445 bytes).
+nts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+lm/lmro10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb>
+Output written on FachBericht.pdf (36 pages, 1657934 bytes).
 PDF statistics:
- 456 PDF objects out of 1000 (max. 8388607)
- 112 named destinations out of 1000 (max. 500000)
- 329 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 591 PDF objects out of 1000 (max. 8388607)
+ 147 named destinations out of 1000 (max. 500000)
+ 333 words of extra memory for PDF output out of 10000 (max. 10000000)
 
