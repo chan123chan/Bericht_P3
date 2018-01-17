@@ -150,7 +150,8 @@ Das verwendete RTC-Modul DS3231 ist ein IC mit integriertem Quarz und I2C-Schnit
 \subsubsection*{4-Channel-ADC}
 Der Mikrocontroller verfügt über diverse analoge Eingänge, welche über einen Multiplexer umgeschaltet und anschliessend quantisiert werden. Insgesamt vier solcher Eingänge werden für das Messgerät benötigt. Welchem Eingang welche Bedeutung zukommt, ist in Abbildung \ref{tab:theoretische_Genauigkeit_der_Messbereiche} zu sehen. Da das Wandeln ein vergleichsweise langsamer Prozess ist, werden bei einer Messung immer nur zwei Eingänge gewandelt: einer für die Spannung und einer der Strombereiche. Die Messbereiche werden softwaremässig ausgewertet und umgeschaltet. Ob sich ein Eingang im Grenzbereich befindet (Overflow bzw. Underflow), wird von einem Algorithmus detektiert. Dieser reagiert bei Bedarf und schaltet den Multiplexer auf einen anderen Messbereich um. Der Algorithmus wird anhand eines Beispiels erläutert.
 
-An den Mess-Shunts sind drei Verstärkerschaltungen für die Strommessung angebracht. Diese sind so konzipiert, dass sie ein Sinussignal im Wertebereich \^{I} bis -\^{I} in den Bereich 0V bis 5V abbilden. Daraus folgt, dass je nach Eingangssignal am Ausgang der Verstärkerstufe ein übersteuertes oder ein zu schwaches Signal auftritt. Da das Signal einen Offset aufweist, bedeutet ein Eingangssignal von 2.5V, dass im Moment kein Strom fliesst. In Abbildung \ref{fig:Software_messbereich} ist dieses Verhalten visualisiert.
+An den Messshunts sind drei Verstärkerschaltungen für die Strommessung angebracht. Mathematisch betrachtet bilden diese eine Abbildung, welche ein Sinussignal im Wertebereich \^I bis \^{-I} in den Bereich 0V bis 5V abbilden. Daraus folgt, dass je nach Eingangssignal am Ausgang der Verstärkerstufe ein übersteuertes oder ein zu schwaches Signal auftritt. Da das Signal einen Offset aufweist, bedeutet ein Eingangssignal von 2.5V, dass im Moment kein Strom fliesst. In Abbildung \ref{fig:Software_messbereich} ist dieses Verhalten visualisiert.
+
 
 \begin{figure}[H]
 \begin{center}
@@ -160,11 +161,34 @@ An den Mess-Shunts sind drei Verstärkerschaltungen für die Strommessung angebr
 \end{center}
 \end{figure}
 
-Gegeben ist ein Eingangssignal mit einer Amplitude von 1A. ADC1. Der Eingang für den kleinsten Bereich, übersteuert in diesem Fall und ADC3 schwankt nur gerade so um den Mittelwert des AD-Bereiches. Für die Software bedeutet dies, dass im Falle eines Overflows der ADC immer wieder den Wert 0 oder 1023 zurückliefert. Im Falle des Underflows erhält das Hauptprogramm Werte im Bereich von 512. Dieses Verhalten kann detektiert und ausgewertet werden. Der Algorithmus zählt die Anzahl an \glqq Overflow-Durchgängen \grqq{} bzw. die Anzahl der  \glqq Underflow-Durchgänge\grqq{} . Ist das Signal ausserhalb dieser Bereiche, werden die gezählten Durchgänge wieder dekrementiert. Überschreitet der Zähler einen definierten Wert, wird der Multiplexer umgeschaltet und somit ein anderer analoger Eingang ausgewertet. Die Anzahl an Durchgänge ist Erfahrungssache und wurde experimentell bestimmt. 
+Gegeben ist ein Eingangssignal mit einer Amplitude von 1A. ADC1, der Eingang für den kleinsten Bereich, übersteuert in diesem Fall und ADC3 schwankt nur gerade so um den Mittelwert. Im Falle eines Overflows liefert der ADC Werte in der Nähe von 0 und 1023 zurück. Im Underflow sind es Werte im Bereich 512. Dieses Verhalten kann von der Software detektiert werden. Sie verfügt über zwei Zähler, welche inkrementiert werden, sollte das Signal eine vordefinierte Schwelle überschreiten (roter Balken in Abbildung \ref{fig:Software_messbereich} ). Ist das Signal ausserhalb dieses Bereiches, werden die jeweiligen Zähler dekrementiert (können aber nicht negativ werden). Überschreitet einer der Zähler einen bestimmten Wert, so schaltet die Software den Messbereich um und setzt beide Zähler zurück.
 
-[Hier Zahlen]
+Sinnvolle Werte für die Schaltschwelle sowie der Obergrenze des Zählers wurden experimentell bestimmt. Insbesondere problematisch sind nichtlineare Lasten, deren Stromkennlinie kein sinusförmiges Signal aufweist. In Abbildung \ref{fig:Software_stromkennlinie_L} ist diese Problematik visualisiert.
 
-Hinweis: Der Nullwert von 512 ist nur theoretisch. Welcher Wert die verschiedenen Messbereiche liefern, wird ebenfalls experimentell bestimmt und in der Software entsprechend korrigiert.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.9\textwidth]{images/Software_stromkennlinie.png}
+\caption{Stromkennlinie induktive Last}
+\label{fig:Software_stromkennlinie_L}
+\end{center}
+\end{figure}
+
+Zu sehen sind reale Messungen mit induktiven Lasten. Man sieht, dass ein stark übersteuertes Signal einen vordefinierten Schwellbereich deutlich seltener überschreitet. Die Obergrenze für den Zähler muss dementsprechend gering gewählt werden, damit auch bei solchen Lasten die Software den Mesbereich rechtzeitig umschaltet. Gleichzeitig dürfen die Werte nicht zu niedrig sein, damit die Software nicht zwischen zwei Messbereichen hin und her springt.
+Die für gut befundenen Werte sind in Tabelle \ref{tab:threshold_Values} zu sehen. Die Zahlen der Wertebereiche sind die dezimalen Rückgabewerte der ADCs.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\multicolumn{1}{|l|}{\textbf{Schaltbereich}} & \multicolumn{1}{l|}{\textbf{\begin{tabular}[c]{@{}l@{}}Overflow-\\ Zähler\end{tabular}}} & \multicolumn{1}{l|}{\textbf{\begin{tabular}[c]{@{}l@{}}Underflow -\\ Zähler\end{tabular}}} & \multicolumn{1}{l|}{\textbf{\begin{tabular}[c]{@{}l@{}}Overflow-\\ Wertebereich\end{tabular}}} & \multicolumn{1}{l|}{\textbf{\begin{tabular}[c]{@{}l@{}}Underflow-\\ Wertebereich\end{tabular}}} \\ \hline
+ADC1 - ADC2                                  & 20                                                                                       & 20                                                                                         & 820\textless X \textless 200                                                                      & Offset +/- 30                                                                                   \\ \hline
+ADC2 - ADC3                                  & 20                                                                                       & 20                                                                                         & 820\textless X \textless 200                                                                      & Offset +/- 90                                                                                   \\ \hline
+\end{tabular}
+\caption{Threshhold-Values}
+\label{tab:threshold_Values}
+\end{table}
+
 
 \subsubsection*{SPI Flashspeicher}
 
@@ -249,7 +273,8 @@ Rückgabewert des Algorithmus & Bedeutung                                       
 00xxxxxx                     & Es wurden noch leere Sektoren gefunden.                                                                                                                                              \\ \hline
 01xxxxxx                     & \begin{tabular}[c]{@{}l@{}}Es gibt keine leeren Sektoren mehr, aber\\ es wurde ein beschriebener Sektor gefunden.\\ (Normalzustand)\end{tabular}                                     \\ \hline
 10xxxxxx                     & \begin{tabular}[c]{@{}l@{}}Es wurden weder leere noch beschriebene Sektoren\\ gefunden. Aber es wurde ein Sektor gefunden,\\ welcher noch nicht korrekt gelöscht wurde.\end{tabular} \\ \hline
-11111111                     & Alle Sektoren sind voll.                                                                                                                                                             \\ \hline
+11xxxxxx                     & Es wurde ein Sektor gefunden, bei dem der Löschvorgang\\
+							& nicht abgeschlossen wurde. \\ \hline
 \end{tabular}
 \caption{Rückgabewert des Algorithmus}
 \label{tab:Rückgabewert}
@@ -258,9 +283,9 @@ Rückgabewert des Algorithmus & Bedeutung                                       
 
 [ Grafik folgt noch ] 
 
-Zuletzt nochmals eine schnelle Zusammenfassung:
+Kurzzusammenfassung:
+Das Programm muss sich zur Laufzeit nur zwei Variablen merken: den aktuellen Sektor und die aktuelle Nummer des Speicherplatzes. Daraus kann jeweils die korrekte 24Bit-Adresse gebildet werden. Beim Aufstarten sucht sich ein Algorithmus diese beiden Werte und gibt diese ans Hauptprogramm weiter. Durch die Speicherorganisation ist dieser Suchvorgang sehr effizient und benötigt nur wenige Lesevorgänge. Die Speicherplatznummer wird stetig inkrementiert. Ist ein Sektor voll, so wird die Sektornummer inkrementiert und die Nummer des Speicherplatzes wieder auf 2 gesetzt. Ist der gesamte Speicher voll, so wird nach und nach der nächste Sektor wieder gelöscht, um darauf neue Daten schreiben zu können. Im Dauerbetrieb gehen dadurch die ältesten Messdaten stetig verloren. 
 
-Das Programm muss sich zur Laufzeit nur zwei Variablen merken. Den aktuellen Sektor und die aktuelle Nummer des Speicherplatzes. Daraus kann jeweils die korrekte 24Bit-Adresse gebildet werden. Beim Aufstarten sucht sich ein Algorithmus diese beiden Werte und gibt sie ans Hauptprogramm weiter. Durch die Speicherorganisation ist dieser Suchvorgang sehr effizient und benötigt nur wenige Lesevorgänge. Die Speicherplatznummer wird stetig inkrementiert. Ist ein Sektor voll, so wird die Sektornummer inkrementiert und die Nummer des Speicherplatzes wieder auf 2 gesetzt. Ist der gesamte Speicher voll, so wird nach und nach der nächste Sektor wieder gelöscht, um darauf neue Daten zu schreiben. Im Dauerbetrieb gehen dadurch die ältesten Messdaten stetig verloren. 
 
 
 \pagebreak

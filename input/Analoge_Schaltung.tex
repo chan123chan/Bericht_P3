@@ -1,4 +1,5 @@
-\section{Analoge Schaltung}\label{sec:analoge_schaltung}
+\section{Analoge Schaltung} 
+\label{sec:analoge_schaltung}
 Im Kapitel werden die verschiedenen analogen Schaltungsteile näher erläutert. Zuerst werden die verschiedenen Schaltungsteile auf dem Layer 1 erläutert. Dies beinhaltet die Speisung, Sicherheitsaspekte und die Messung. Danach werden die Bestandteile der Signalaufbereitung näher betrachtet.
 
 \subsection{Layer 1}%Marc 1 Seite
@@ -7,8 +8,7 @@ Der erste Layer ist für alle Schaltungsteile mit 230V, sowie für die Verbindun
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=160mm]{images/first_layer.png}
-
+	\includegraphics[width=160mm]{images/first_layer.png}
 	\caption{Blockschaltbild des ersten Layers des Leistungsmessgerätes} %picture caption
 	\label{fig:first_layer}
 \end{center}
@@ -56,7 +56,7 @@ Die Wahl fiel auf Butterworth-Filter mit Sallen/Key-Topologie 2. Ordnung. Diese 
 \end{figure}
 
 
-\subsubsection*{Auswahl Operationsverstärker Filter}
+\subsubsection*{Auswahl Operationsverstärker}
 An den Operationsverstärker wurden praktisch keine Anforderungen gestellt. Er soll ein GWP\cite{wiki} von mindestens 800kHz besitzen und nicht Rail-to-Rail sein. Ausserdem werden vier Operationsverstärker benötigt. Dies ist der \textbf{TL074}, der praktischerweise 4 Operationsverstärker in einem Gehäuse vereint. Die passiven Bauteile wurden mithilfe einer Formel\cite{fail} aus dem Internet erstellt, die sich im Laufe des Projektes als falsch herausstellte.
 
 \subsubsection*{Falsche Filter}
@@ -170,7 +170,7 @@ Daher wird bei diesem Fehler im Gegensatz zu den anderen eine zusätzliche Konst
 Bei der Konvertierung eines analogen Signals zu einem Digitalem gibt es zwingendermassen einen Informationsverlust durch die Quantisierung des Signals. Da für dieses Gerät ein 10 Bit ADC verwendet wird, hat das digitale Signal eine Auflösung von 1024 Werten. Für die vier Messkanäle ergeben sich folgende Toleranzen in der Tabelle \ref{tab:auflösung}.
 
 
-\begin{table}[]
+\begin{table}[H]
 \centering
 \begin{tabular}{|l|l|l|l|l|}
 \hline
@@ -178,7 +178,7 @@ Messung     & Spannung  & \multicolumn{3}{c|}{Strom}     \\ \hline
 Messbereich & $\pm333V$ & $\pm15A$ & $\pm5A$ & $\pm0.5A$ \\ \hline
 Auflösung   & $0.65V$   & $29mA$   & $9.8mA$ & $0.98mA$  \\ \hline
 \end{tabular}
-\caption{Auflösung der Messbereichen}
+\caption{Auflösung der Messbereiche}
 \label{tab:auflösung}
 \end{table}
 
